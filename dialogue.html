@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body style="background: #ebebeb;">
+<header><a href="index.html"><img src="images/leftw.png" alt=""/></a>律贝</header>
+<div class="inner clearfix">
+    <div id="question">
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>您好，我是律贝，我们将竭诚帮你服务！<p class="audio" id="audio"><img src="images/audio.png" alt=""/></p></dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueL" style="padding-bottom: 80px;">
+            <!--<dt></dt>-->
+            <dd>
+                猜您可能要问：
+                <div style="color:#0091ff;line-height: 35px;margin-top: 10px;">
+                    <span>1：婚礼彩礼问题</span> <br/>
+                    <span id="divorce">2：离婚时房屋财产分割问题</span><br/>
+                    <span>3：子女抚养问题</span>
+
+                </div>
+                <p><img src="" alt=""/></p></dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+    </div>
+
+
+    <div class="divorceDia" style="display: none;">
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>您好，请问您是想问屋分割还是其他财产分割？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>房子怎么分的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问您的房屋是购买的商品房么？还是是他类型的房屋？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>商品房</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问房子是婚前购买的还是婚后购买的呢？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>婚前购买的房子</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问房子是出资人是谁？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>男方父母买的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>不告诉你</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>你猜</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>我就不说</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请您务必准确回答律贝的问题，以便更好的为您提供咨询服务</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd class="mode">
+                请问男方父母出资方式：<br/>
+                <span style="">1.全款</span><span>2.首付</span>
+            </dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>首付</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>那么还贷部分是不是由你们夫妻共同还款？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>是的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>男方父母有明确表示赠送你们夫妻么？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>没有，但是房本上登记的名字是我的名字</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>根据您的描述，依据相关的法律规定，离婚分割房屋的时候，女方只能和男方分割婚后房屋还贷部分和房屋增值部分。男方父母的出资应当认定为对男方的赠与，不能进行财产分割。
+                法律依据：《最高人民法院关于适用<中华人民共和国婚姻法>若干问题解释（二）》，第二十二条规定：
+                    【父母为双方购置房屋的出资】当事人结婚前，父母为双方购置房产出资的，该出资应当认定为对自己子女的个人赠与，但父母明确表示赠与双方的除外。</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd class="mode">
+                已为您制定获取房屋权益的方案与建议，是否需要？ <br/>
+                <span>谢了，不需要</span><span onclick="javascript:window.location.href='signUp.html'">点击获取</span>
+            </dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+    </div>
+
+
+</div>
+
+
+<div class="sendMessage">
+    <ul>
+        <li id="audioBtn"></li>
+        <li id="message"><input type="text"/></li>
+        <li>发送</li>
+    </ul>
+</div>
+
+<div class="audioLoad">
+    <img src="images/microphone.png" alt=""/> <br/>
+    手指上滑，取消发送
+</div>
+
+</body>
+</html>
+<script>
+    $('#audio').click(function(){
+        console.log(123)
+        $('#audio img').attr('src','images/audio.gif')
+
+    });
+
+    var flag=true;
+
+    $("#audioBtn").click(function(){
+        if(flag){
+            $(this).css('background','url("images/keyboard.png") no-repeat').css('background-size',"26px");
+            $('#message').html("按住 说话");
+            flag=!flag;
+            $('#message').click(function(){
+                $(".audioLoad").show();
+                var timer=setInterval(function(){
+                    $(".audioLoad").hide();
+                    clearInterval(timer)
+                },2000)
+            })
+        }else{
+            $(this).css('background','url("images/audio01.png") no-repeat').css('background-size',"26px");
+            $('#message').html('<input type="text">');
+            flag=!flag;
+        }
+
+    });
+
+
+    $("#divorce").click(function(){
+        $("#question").hide();
+        $(".divorceDia").show();
+
+    });
+    $(".dialogueR").each(function(){
+        if($(this).find("dd").width()>=$(this).width()){
+            $(this).find("dd").css("text-align","left");
+        }
+    })
+
+
+</script>

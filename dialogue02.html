@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body style="background: #ebebeb;">
+<header><a href="index.html"><img src="images/leftw.png" alt=""/></a>律贝</header>
+<div class="inner clearfix">
+    <div class="divorceDia" style="display: none;">
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>您好，请问您是想问屋分割还是其他财产分割？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>房子怎么分的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问您的房屋是购买的商品房么？还是是他类型的房屋？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>商品房</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问房子是婚前购买的还是婚后购买的呢？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>婚前购买的房子</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问房子是出资人是谁？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>男方父母买的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>不告诉你</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>你猜</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请问男方父母付的是全款还是只付了首付？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>我就不说</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>请您务必准确回答律贝的问题，以便更好的为您提供咨询服务</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd class="mode">
+                请问男方父母出资方式：<br/>
+                <span style="">1.全款</span><span>2.首付</span>
+            </dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>首付</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>那么还贷部分是不是由你们夫妻共同还款？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>是的</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>男方父母有明确表示赠送你们夫妻么？</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueR">
+            <dt></dt>
+            <dd>没有，但是房本上登记的名字是我的名字</dd>
+            <div class="dialogueRArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd>根据您的描述，依据相关的法律规定，离婚分割房屋的时候，女方只能和男方分割婚后房屋还贷部分和房屋增值部分。男方父母的出资应当认定为对男方的赠与，不能进行财产分割。
+                法律依据：《最高人民法院关于适用<中华人民共和国婚姻法>若干问题解释（二）》，第二十二条规定：
+                    【父母为双方购置房屋的出资】当事人结婚前，父母为双方购置房产出资的，该出资应当认定为对自己子女的个人赠与，但父母明确表示赠与双方的除外。</dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+        <dl class="dialogueL">
+            <dt></dt>
+            <dd class="mode">
+                已为您制定获取房屋权益的方案与建议，是否需要？ <br/>
+                <span>谢了，不需要</span><span onclick="javascript:window.location.href='signUp.html'">点击获取</span>
+            </dd>
+            <div class="dialogueLArrow"></div>
+        </dl>
+    </div>
+
+    <p class="HistoricalDia"><span>以上是历史对话</span></p>
+<div class="SignUpDialogue">
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd id="history">你好，王女士。
+            由于房屋登记人是您本人，因此只要能明确证明男方父母是将房屋赠与您的，房屋的所有权归于您。
+            但是房屋的夫妻共同还贷部分和房屋的增值部分还是夫妻共同财产。如果您要最大限度争取权益，需要提供男方有婚姻过错的合法证据，可以在分割房产时候获取相应的离婚损害赔偿。</dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd>请问目前您有关于男方婚姻过错方面的证据么？</dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+    <dl class="dialogueR">
+        <dt></dt>
+        <dd>只有丈夫跟小三开房的视频</dd>
+        <div class="dialogueRArrow"></div>
+    </dl>
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd>请问视频拍摄的地点在那里?</dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+    <dl class="dialogueR">
+        <dt></dt>
+        <dd>在他们开房的四季酒店</dd>
+        <div class="dialogueRArrow"></div>
+    </dl>
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd>不建议您在法庭上使用该证据，因为该证据的获取途径不合法，侵犯了别人的隐私权，除非您在自己家里面获取。
+            法官很难采用这样的证据，建议您提供合法的证据，以证明您的丈夫是婚姻过错一方。以免对方以此提起反诉，引起不必要的纠纷</dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd class="mode">是否需要律师帮助服务？ <br/><span>谢了，不需要</span><span>点击获取</span></dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+    <p class="error">超过3分钟误操作</p>
+    <dl class="dialogueL">
+        <dt></dt>
+        <dd>本次对话已结束，祝您生活愉快，再见！</dd>
+        <div class="dialogueLArrow"></div>
+    </dl>
+</div>
+</div>
+
+
+<div class="sendMessage">
+    <ul>
+        <li id="audioBtn"></li>
+        <li id="message"><input type="text"/></li>
+        <li>发送</li>
+    </ul>
+</div>
+
+<div class="audioLoad">
+    <img src="images/microphone.png" alt=""/> <br/>
+    手指上滑，取消发送
+</div>
+
+</body>
+</html>
+<script>
+    $('#audio').click(function(){
+        console.log(123)
+        $('#audio img').attr('src','images/audio.gif')
+
+    });
+
+    var flag=true;
+
+    $("#audioBtn").click(function(){
+        if(flag){
+            $(this).css('background','url("images/keyboard.png") no-repeat').css('background-size',"26px");
+            $('#message').html("按住 说话");
+            flag=!flag;
+            $('#message').click(function(){
+                $(".audioLoad").show();
+                var timer=setInterval(function(){
+                    $(".audioLoad").hide();
+                    clearInterval(timer)
+                },2000)
+            })
+        }else{
+            $(this).css('background','url("images/audio01.png") no-repeat').css('background-size',"26px");
+            $('#message').html('<input type="text">');
+            flag=!flag;
+        }
+
+    });
+
+
+
+    $(".dialogueR").each(function(){
+        if($(this).find("dd").width()>=$(this).width()){
+            $(this).find("dd").css("text-align","left");
+        }
+    })
+
+
+//**********************************************************************
+    function sss(id){
+        return document.getElementById(id)
+    }
+    function gundong(){
+        $(function(){
+            //*******************
+            //返回角度
+            function GetSlideAngle(dx, dy) {
+                return Math.atan2(dy, dx) * 180 / Math.PI;
+            }
+
+            //根据起点和终点返回方向 1：向上，2：向下，3：向左，4：向右,0：未滑动
+            function GetSlideDirection(startX, startY, endX, endY) {
+                var dy = startY - endY;
+                var dx = endX - startX;
+                varresult = 0;
+
+                //如果滑动距离太短
+                if(Math.abs(dx) < 2 && Math.abs(dy) < 2) {
+                    return result;
+                }
+
+                var angle = GetSlideAngle(dx, dy);
+                if(angle >= -45 && angle < 45) {
+                    result = 4;
+                }else if (angle >= 45 && angle < 135) {
+                    result = 1;//上滑
+                }else if (angle >= -135 && angle < -45) {
+                    result = 2;  //下滑
+                }
+                else if ((angle >= 135 && angle <= 180) || (angle >= -180 && angle < -135)) {
+                    result = 3;
+                }
+                return result;
+            }
+            //滑动处理
+            var startX, startY;
+
+            sss("history").addEventListener('touchstart',function (ev) {
+                startX = ev.touches[0].pageX;
+                startY = ev.touches[0].pageY;
+            }, false);
+            sss("history").addEventListener('touchend',function (ev) {
+                var endX, endY;
+                endX = ev.changedTouches[0].pageX;
+                endY = ev.changedTouches[0].pageY;
+                var direction = GetSlideDirection(startX, startY, endX, endY);
+                if(direction==2){
+                    $(".divorceDia").show();
+                }
+            }, false);
+            //**************
+
+        });
+    }
+    gundong();
+
+</script>

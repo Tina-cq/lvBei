@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.7.2.min.js"></script>
+</head>
+<body style="background: #eeeeee;overflow: hidden;">
+    <div class="banner"><img src="images/banner.png" alt=""/>
+    <p>律贝，是您贴身的法律顾问</p>
+    <div class="consulting"  onclick="javascript:window.location.href='login.html'" >立即咨询</div></div>
+    <div class="nav">
+        <ul>
+            <li class="active"><a href="index.html"><img src="images/icon01.png" alt=""/><br/>主页</a></li>
+            <li id="serve"><img src="images/icon02.png" alt=""/> <br/>服务</li>
+            <li><a href="PersonalCenter.html"><img src="images/icon03.png" alt=""/><br/>我的</a></li>
+        </ul>
+
+        <div class="circle02">
+            <ul>
+                <li><div><img src="images/icon01.png" alt=""> <br>咨询推荐</div></li>
+                <li><div><img src="images/icon03.png" alt=""> <br>模拟法庭</div></li>
+                <li><div><img src="images/icon03.png" alt=""> <br>我的工具</div></li>
+            </ul>
+        </div>
+        <div class="circle">
+            <div class="arrow-box">
+                <div class="arrow"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+    var screenW=document.documentElement.clientWidth;
+
+    $("#serve").click(function(){
+        $(".circle02").animate({"width":screenW,"height":"160px"},"slow");
+        $(".circle").css("z-index",12);
+        $(".arrow-box").show();
+        $(".circle02 li:nth-of-type(1)").animate({"top":"60px","left":0});
+        $(".circle02 li:nth-of-type(2)").animate({"top":0});
+        $(".circle02 li:nth-of-type(3)").animate({"top":"60px","left":"66.66%"});
+
+    });
+
+    $(".arrow-box").click(function(){
+        $(".circle02").animate({"width":"120px","height":"60px"},"slow");
+        $(".circle").css("z-index",9);
+        $(".arrow-box").hide();
+        $(".circle02 li:nth-of-type(1)").animate({"top":"20%","left":"33.33%"});
+        $(".circle02 li:nth-of-type(2)").animate({"top":"20%","left":"33.33%"});
+        $(".circle02 li:nth-of-type(3)").animate({"top":"20%","left":"33.33%"});
+    });
+
+
+    var screenH=document.documentElement.clientHeight;
+    $(".consulting").css("bottom",screenW/2+10);
+    $(".lvbei").css("bottom",screenW/2+10+$(".consulting").height());
+    $(".banner").css("height",screenH -screenW/2 -$(".consulting").height() - 10 - $(".lvbei").height());
+
+
+</script>
